@@ -3,7 +3,7 @@
 import { _download } from "./downloader";
 
 //const serverUrl = window.location.protocol + "//" + window.location.host;
-const serverUrl = "https://backend-io.herokuapp.com/";
+const serverUrl = "https://backend-io.herokuapp.com";
 
 let token;
 const setToken = (t)  => {
