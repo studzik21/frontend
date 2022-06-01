@@ -1,0 +1,170 @@
+:root {
+    --header-h: 3.5rem;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+}
+
+.App-body {
+    background-color: var(--bs-gray-300);
+    min-height: calc(100vh - var(--header-h));
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.App-header {
+    background-color: #282c34;
+    height: var(--header-h);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 3em auto;
+}
+
+.App-header ul {
+    list-style: none;
+    font-size: calc(8px + 1vmin);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.App-header ul li {
+    margin: 0 1.25em;
+    display: flex;
+    align-items: center;
+    border-radius: 0.125em;
+}
+
+.App-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.App-header a:hover {
+    opacity: 75%;
+}
+
+.App-header li[data-active="true"] a {
+    text-decoration: underline;
+}
+
+label {
+    margin-bottom: 0.25em;
+}
+
+title {
+    display: block;
+}
+
+.App-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.App-header a:hover {
+    opacity: 75%;
+    /* text-decoration: underline; */
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.list-group-item span {
+    vertical-align: middle;
+}
+
+.rw-time-input-clear > svg {
+    opacity: 1;
+}
+
+.app .table-results {
+    border-collapse: separate;
+    border-spacing: 0.2em;
+}
+
+.app .table-results th,
+.app .table-results td {
+    border: none;
+    border-radius: 0.1em;
+    vertical-align: middle;
+}
+
+.dragDropField {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    /* border: 5px solid blue; */
+}
+
+.floatingActionBtn {
+    position: fixed;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    bottom: 3rem;
+    right: 2.5rem;
+    background: linear-gradient(to bottom right, var(--accent-clr-3), var(--accent-clr));
+    border: 0;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.floatingActionBtn::after {
+    content: "\002B";
+    background-color: red;
+    position: absolute;
+    left: 0.45em;
+    bottom: 2.25em;
+    font-size: 2rem;
+    vertical-align: middle;
+    height: 0;
+}
+
+.floatingActionBtn:focus {
+    color: white;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+        0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.floatingActionBtn:hover {
+    color: white;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+        0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.plusIcon {
+    font-size: 24px;
+
+    text-align: center;
+}
+
+:where(button, input):where(:not(:active)):focus-visible {
+    outline-offset: 5px;
+}
+
+.resultsView h2 {
+    text-align: center;
+    margin-bottom: 0.75em;
+}

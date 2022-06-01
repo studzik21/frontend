@@ -1,0 +1,37 @@
+.groupView table {
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 0.2em;
+}
+
+.groupView th,
+.groupView td {
+    border: none;
+    border-radius: 0.1em;
+    vertical-align: middle;
+    padding: 0.5rem 0.5rem;
+    color: black;
+    background-color: lightgray;
+}
+
+.groupView td {
+    cursor: default;
+    opacity: 1;
+}
+
+.groupView td:empty {
+    opacity: 0;
+}
+
+.generateGroupsButton {
+    width: max(50%, 10em);
+    /* width: 100%; */
+    background-color: #fff;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    position: relative;
+    margin: 1.8rem 0 4rem 0;
+    cursor: pointer;
+    align-self: center;
+}
+
